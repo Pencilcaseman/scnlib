@@ -531,7 +531,7 @@ namespace scn {
 }  // namespace scn
 
 #if defined(SCN_HEADER_ONLY) && SCN_HEADER_ONLY && !defined(SCN_READER_INT_CPP)
-#include "reader_int.cpp"
+#include "../../../src/reader_int.cpp"
 #endif
 
 #endif

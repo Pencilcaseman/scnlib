@@ -19,8 +19,10 @@
 #define SCN_READER_FLOAT_CPP
 #endif
 
+#if !defined(SCN_HEADER_ONLY) && !SCN_HEADER_ONLY && defined(SCN_LOCALE_CPP)
 #include <scn/detail/args.h>
 #include <scn/reader/float.h>
+#endif
 
 #include <cerrno>
 #include <clocale>
@@ -46,7 +48,7 @@ SCN_CLANG_IGNORE("-Wreserved-identifier")
 SCN_CLANG_IGNORE("-Wextra-semi-stmt")
 #endif
 
-#include <fast_float/fast_float.h>
+#include "deps/fast_float/single_include/fast_float/fast_float.h"
 
 SCN_CLANG_POP
 SCN_GCC_POP

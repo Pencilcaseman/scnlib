@@ -202,7 +202,7 @@ namespace scn {
 }  // namespace scn
 
 #if defined(SCN_HEADER_ONLY) && SCN_HEADER_ONLY && !defined(SCN_VSCAN_CPP)
-#include "vscan.cpp"
+#include "../../../src/vscan.cpp"
 #endif
 
 #endif  // SCN_SCAN_VSCAN_H

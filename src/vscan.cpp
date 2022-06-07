@@ -19,11 +19,13 @@
 #define SCN_VSCAN_CPP
 #endif
 
+#if !defined(SCN_HEADER_ONLY) && !SCN_HEADER_ONLY && defined(SCN_LOCALE_CPP)
 #include <scn/scan/vscan.h>
 
 #include <scn/detail/context.h>
 #include <scn/detail/parse_context.h>
 #include <scn/detail/visitor.h>
+#endif
 
 namespace scn {
     SCN_BEGIN_NAMESPACE

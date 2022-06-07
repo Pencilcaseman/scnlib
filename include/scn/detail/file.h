@@ -562,7 +562,7 @@ namespace scn {
 }  // namespace scn
 
 #if defined(SCN_HEADER_ONLY) && SCN_HEADER_ONLY && !defined(SCN_FILE_CPP)
-#include "file.cpp"
+#include "../../../src/file.cpp"
 #endif
 
 #endif  // SCN_DETAIL_FILE_H

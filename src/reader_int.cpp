@@ -19,8 +19,10 @@
 #define SCN_READER_INT_CPP
 #endif
 
+#if !defined(SCN_HEADER_ONLY) && !SCN_HEADER_ONLY && defined(SCN_LOCALE_CPP)
 #include <scn/detail/args.h>
 #include <scn/reader/int.h>
+#endif
 
 namespace scn {
     SCN_BEGIN_NAMESPACE

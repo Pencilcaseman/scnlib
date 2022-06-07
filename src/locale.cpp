@@ -19,8 +19,13 @@
 #define SCN_LOCALE_CPP
 #endif
 
+#if !defined(SCN_HEADER_ONLY) && !SCN_HEADER_ONLY && defined(SCN_LOCALE_CPP)
 #include <scn/detail/locale.h>
 #include <scn/util/math.h>
+#else
+#include "../include/scn/detail/locale.h"
+#include "../include/scn/util/math.h"
+#endif
 
 #include <cctype>
 #include <cmath>

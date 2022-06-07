@@ -19,9 +19,11 @@
 #define SCN_FILE_CPP
 #endif
 
+#if !defined(SCN_HEADER_ONLY) && !SCN_HEADER_ONLY && defined(SCN_LOCALE_CPP)
 #include <scn/detail/error.h>
 #include <scn/detail/file.h>
 #include <scn/util/expected.h>
+#endif
 
 #include <cstdio>
 

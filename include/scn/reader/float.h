@@ -240,7 +240,7 @@ namespace scn {
 
 #if defined(SCN_HEADER_ONLY) && SCN_HEADER_ONLY && \
     !defined(SCN_READER_FLOAT_CPP)
-#include "reader_float.cpp"
+#include "../../../src/reader_float.cpp"
 #endif
 
 #endif
